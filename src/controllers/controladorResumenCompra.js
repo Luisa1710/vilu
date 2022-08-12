@@ -8,6 +8,7 @@ let contenedor= document.getElementById('contenedor')
 
 console.log(carrito)
 
+    let totalCompra = 0   
 
 if (carrito == null) {    
 
@@ -18,7 +19,6 @@ if (carrito == null) {
 }
 else {
     
-    let totalCompra = 0   
   
     carrito.forEach (function(producto){
 
@@ -102,3 +102,21 @@ botonLimpiar.addEventListener("click",function(evento){
     pintarResumenCompra('../../assets/img/vacio.png','Carrito vacio',true,false,null,false,null)
 
 })
+console.log (totalCompra)
+let botonCOP= document.getElementById('botonCOP')
+
+botonCOP.addEventListener('click',function(evento){
+
+ total.textContent  = '$' + Math.round(totalCompra/4204) + '  US'
+
+})
+
+botonCOP.addEventListener('dblclick',function(evento){
+
+    total.textContent = 'Total: ' + '$' +  totalCompra
+   
+   })
+
+//traer COP
+//traer total
+
