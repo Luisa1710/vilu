@@ -1,3 +1,5 @@
+import { productosCategorias } from "../helpers/Database.js"
+import { pintarProductos } from "./controladorCards.js"
 
 //Pregunto si mi carrito tiene productos
 
@@ -8,8 +10,15 @@ if(localStorage.getItem('sumaCarrito')!=null){
    
 
 }
-let producto= JSON.parse(localStorage.getItem('infoProducto'))
+let producto= JSON.parse(localStorage.getItem('infoProducto')) 
 
+let filtroProductosRelacionados = productosCategorias.filter(function(producto2){
+    return(producto2.categoria==producto.categoria)
+})
+
+
+let productosRelacionados = filtroProductosRelacionados.splice(5,7)
+console.log(productosRelacionados)
 
 //Revisar si hay productos en el carrito
 let carrito
@@ -29,10 +38,12 @@ let foto = document.getElementById ("foto")
 foto.src= producto.foto
 let nombre = document.getElementById ("nombre")
 nombre.textContent = producto.nombre
+nombre.classList.add ('fs-2')
+
 let precio = document.getElementById ("precio")
 precio.textContent = producto.precio
 let descripcion = document.getElementById ("descripcion")
-descripcion.classList.add ('ms-5', 'text-center')
+descripcion.classList.add ('fs-6')
 descripcion.textContent = producto.descripcion;
 
 
@@ -133,3 +144,5 @@ else if (producto.popularidad== "4"){
 else {
 
  }
+
+pintarProductos(productosRelacionados)
