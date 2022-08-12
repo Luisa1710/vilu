@@ -1,0 +1,113 @@
+h3{ font-size: medium;}
+h2{ font-size:large}
+.fondo {
+    background-color: rgb(232, 226, 237);
+}
+.fuente {
+    font-family: 'Quicksand', sans
+    serif;
+}  
+
+.pagina1{
+
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items: center;
+    margin-top: 100px;
+    justify-content:stretch;
+    
+    }
+    .pie{
+        background-color: rgb(188, 160, 236);
+            display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items: center;
+        margin-top: 100px;
+        height: 300px;
+        width: 100%;
+        justify-content: space-around;
+        
+        }
+
+    .botones {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+        .boton {
+            box-sizing: border-box;
+            -webkit-appearance: none;
+               -moz-appearance: none;
+                    appearance: none;
+            background-color: transparent;
+           
+            border-radius: 0.6em;
+            cursor: pointer;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1;
+            margin: 20px;
+            padding: 1.2em 2.8em;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Quicksand', sans
+            serif;
+            font-weight: 700;
+          }
+          .boton:hover, .boton:focus {
+            color: #fff;
+            outline: 0;
+          }
+          .third {
+            border-color: #d0a6e0;
+            color: #fff;
+            box-shadow: 0 0 40px 40px #d0a6e0 inset, 0 0 0 0 #d0a6e0 ;
+            -webkit-transition: all 150ms ease-in-out;
+            transition: all 150ms ease-in-out;
+          }
+          .third:hover {
+            box-shadow: 0 0 10px 0 #9b7ca7 inset, 0 0 10px 4px #9b7ca7;
+          }
+  
+  #total{
+    color: #b770c3;
+    text-shadow:  -3px -3px #ffffff, 3px -3px #ffffff, 3px 3px #f3f3f2;
+  }
+
+  .subtotal{
+
+    color: #b770c3;
+  }
+
+  .botonCOP{
+    width: 200px;
+  }
+/* .botonesf{
+  
+  
+} */
+.limpiar{
+
+
+  width: 400px;
+}
+  /* .contenedor{
+
+    display: flex;
+    justify-content: center;
+align-items: flex-end;    
+
+  } */

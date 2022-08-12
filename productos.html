@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <enlace rel="preconectar" href="https://fonts.googleapis.com">
+    <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <enlace href="https: //fonts.googleapis.com/css2? family= Josefin+Slab:wght@100 & display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/estilos.css">
+</head>
+<body class="fuente fondo">
+  <header>
+    <div class="container "> 
+        <div  class="row">
+          <div class="col-3">
+            <a href="./index.html">
+              <img src="./assets/img/Logo.png"  alt="" class="img-fluid w-100"> 
+            </a>
+          </div>
+          <div class="col-8">
+            
+            <span class="navbar-toggler-icon "></span>
+            <section class="menu">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light mt-5 ">
+                <div class="container-fluid ">
+                  <a class="navbar-brand " href="./index.html">Vilu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                          <a class="nav-link" href="./productos.html">Productos</a>
+                          <a class="nav-link" href="./src/views/carrito.html">Comprar</a>
+                          <a class="nav-link" href="./src/views/formulario.html">Contactanos</a>
+                          <a class="nav-link" href="./src/views/carrito.html">
+                            <h1 class="position-absolute top-0 start-50"><i class="bi bi-bag-check"></i></h1>
+                            <span id="sumaProductos" class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-secondary">
+                                  9 
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                  </div>
+                </nav>
+              </section>
+          </div> 
+        </div>
+    </div>
+</header>
+
+    <section>
+     <div class="botones">
+        <button id="botonRostro" class="boton third">Rostro</button>
+        <button id="botonOjos" class="boton third">Ojos</button>
+        <button id="botonBrochas" class="boton third">Brochas</button>
+        <button id="botonLabios" class="boton third">Labios</button>
+      </div>
+       <center><button id="botonCategorias" class="boton third">All</button></center>
+
+        <div class="container my-5">
+          <div class="row">
+            <div class="col-md-6 mb-5">
+              <input class="form-control" type="search" value=""placeholder="Buscar" id="buscador" >
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-4 g-3 " id="fila">
+            
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <section class="pie">
+          <section><a href="./VILU.html"><img height="300px" src="./assets/img/Footer.png" alt=""></a></section>
+         <section>
+           <h3>Redes: VILU Makeup</h3>
+          <H3>Contacto: 3108016744</H3>
+          <h3>Correo: vilu.makeup@makeup.com</h3>
+          <h3>Owner: Luisa Ospina</h3>
+          <h3>GitHub: https://github.com/Luisa1710</h3>
+        </section>
+      <section>
+        <img src="./assets/img/email.png" alt=""><br><br>
+        <img src="./assets/img/google.png" alt=""><br><br>
+        <img src="./assets/img/instagram.png" alt="">
+    
+      </section>
+        </section>
+      </footer> 
+
+
+    <script src="./src/controllers/controladorProductos.js" type="module"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   
+    
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito compra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../assets/styles/estilos.css">
+</head>
+<body class="fondo fuente">
+    <header>
+        <div class="container "> 
+            <div  class="row">
+              <div class="col-3">
+                <a href="../../index.html">
+                  <img src="../../assets/img/Logo.png"  alt="" class="img-fluid w-100"> 
+                </a>
+              </div>
+              <div class="col-8">
+                
+                <span class="navbar-toggler-icon "></span>
+                <section class="menu">
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light mt-5 ">
+                    <div class="container-fluid ">
+                      <a class="navbar-brand " href="./index.html">Vilu</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                          <div class="navbar-nav">
+                              <a class="nav-link" href="../../productos.html">Productos</a>
+                              <a class="nav-link" href="./carrito.html">Comprar</a>
+                              <a class="nav-link" href="./formulario.html">Contactanos</a>
+                              <a class="nav-link" href="./carrito.html">
+                                <h1 class="position-absolute top-0 start-50"><i class="bi bi-bag-check"></i></h1>
+                                <span id="sumaProductos" class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-secondary">
+                                       
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                      </div>
+                    </nav>
+                  </section>
+              </div> 
+            </div>
+        </div>
+    </header> 
+    
+    <main>
+      <div id="contenedor" class="container my-5">
+      </div>
+          
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-3 text-center">
+
+
+          <h1 class="fw-bold" id="total"> </h1>
+
+          <div class="row">
+            <div class="col-md-6">  
+              <button type="button" class="boton third" id="botonLimpiar">
+                <!-- <i class="bi bi-trash"></i>  -->
+                Limpiar
+              </button>
+            </div>
+            <div class="col-md-6">
+              <button type="button" class="boton third" id="botonLimpiar">
+                <!-- <i class=" bi bi-cash-coin"></i>    -->
+                  COP - USD
+              </button>
+            </div>   
+          </div>
+           <center> 
+            <button type="button" class="boton third">
+              Pagar
+            </button>
+          </center>
+          
+        </div>
+      </div>
+    </main>
+
+<a href="../../productos.html"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <section class="pie">
+          <section><a href="./VILU.html"><img height="300px" src="../../assets/img/Footer.png" alt=""></a></section>
+         <section>
+           <h3>Redes: VILU Makeup</h3>
+          <H3>Contacto: 3108016744</H3>
+          <h3>Correo: vilu.makeup@makeup.com</h3>
+          <h3>Owner: Luisa Ospina</h3>
+          <h3>GitHub: https://github.com/Luisa1710</h3>
+        </section>
+      <section>
+        <img src="../../assets/img/email.png" alt=""><br><br>
+        <img src="../../assets/img/google.png" alt=""><br><br>
+        <img src="../../assets/img/instagram.png" alt="">
+    
+      </section>
+      </section>
+      </footer> 
+
+      <script src="../controllers/controladorResumenCompra.js" type="module"></script>
+      <script src="../controllers/controladorSumaCarrito.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
