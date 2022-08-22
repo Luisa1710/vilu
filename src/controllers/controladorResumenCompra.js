@@ -12,9 +12,12 @@ console.log(carrito)
 
 if (carrito == null) {    
 
+     
+
+
     pintarResumenCompra('../../assets/img/vacio.png','No hay productos a pagar',true,false,null,false,null)
 
-
+  
 
 }
 else {

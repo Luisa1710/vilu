@@ -2,10 +2,10 @@ export function pintarResumenCompra(fotoURL,nombreMensaje,banderaBoton,banderaPr
 
     
     let contenedor=document.getElementById("contenedor")
-    contenedor.classList.add ('contenedor')
+    contenedor.classList.add ('contenedor-fluid',"center")
    
     let fila=document.createElement("div")
-    fila.classList.add("row","mb-3", )
+    fila.classList.add("row","mb-3" )
 
     let columna1=document.createElement("div")
     columna1.classList.add("col-12","col-md-4","border-end")
@@ -32,6 +32,14 @@ export function pintarResumenCompra(fotoURL,nombreMensaje,banderaBoton,banderaPr
     let cantidad=document.createElement("h3")
     cantidad.textContent="Cantidad: "+cantidadProducto
 
+    let botonCOP = document.getElementById("botonCOP")
+    botonCOP.classList.add("invisible")
+    let botonLimpiar = document.getElementById("botonLimpiar")
+    botonLimpiar.classList.add("invisible")
+    let botonPagar = document.getElementById("botonPagar")
+    botonPagar.classList.add("invisible")
+
+
     //padres e hijos
     columna1.appendChild(foto)
     columna2.appendChild(nombre)
@@ -48,6 +56,7 @@ export function pintarResumenCompra(fotoURL,nombreMensaje,banderaBoton,banderaPr
     fila.appendChild(columna2)
     contenedor.appendChild(fila)
     
+
 
 
     
