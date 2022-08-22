@@ -17,7 +17,7 @@ let filtroProductosRelacionados = productosCategorias.filter(function(producto2)
 })
 
 
-let productosRelacionados = filtroProductosRelacionados.splice(5,7)
+let productosRelacionados = filtroProductosRelacionados.splice(4,7)
 console.log(productosRelacionados)
 
 //Revisar si hay productos en el carrito
